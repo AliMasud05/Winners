@@ -1,0 +1,383 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Lobster&family=Poppins:wght@400;700&display=swap');
+
+    @font-face {
+        font-family: "HelveticaNeue";
+        src: url(utility/Helvetica\ Neue\ Medium\ Extended.ttf) format('truetype');
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        background-color: #fff;
+
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+    }
+
+    .row-container {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .row {
+
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 100px 0;
+        background-color: black;
+        border-radius: 30px;
+
+    }
+
+    .col-1 {
+        flex-basis: 45%;
+        position: relative;
+
+    }
+
+    .col-1 h1 {
+        font-size: 70px;
+        line-height: 80px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .col-1 p {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+
+    }
+
+    .col-1 button {
+        background-color: chocolate;
+        margin: 20px 0;
+    }
+    .fa-light{
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .col-1 button a {
+        padding: 13px 20px;
+        font-size: 15px;
+        font-family: 'HelveticaNeue';
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .col-2 {
+        position: relative;
+        flex-basis: 45%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .col-2 img {
+        width: 90%;
+    }
+
+    /* -----------------------------------
+                shedule-section
+    ----------------------------------------- */
+    .shedule_section {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 100px;
+
+    }
+
+    .match_fixture {
+        width: 312px;
+        height: 312px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #161616;
+        border-radius: 16px;
+    }
+
+    .match_fixture button {
+
+        margin: 12px 15px;
+        padding: 17px 39px;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 10px;
+    }
+
+    .active {
+        background-color: rgb(221, 0, 0);
+    }
+
+    .match_fixture button a {
+        text-decoration: none;
+
+    }
+
+    .match_schedule {
+        border: 2px solid black;
+        padding: 20px 10px;
+        border-radius: 19px;
+    }
+
+    .match_schedule * {
+        text-align: center;
+        color: #161616;
+
+
+    }
+
+    .thumnail_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .date_container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    /*------------------------------ 
+                    footer-section 
+        --------------------------------*/
+    footer {
+        text-align: center;
+        background-color: #161616;
+
+
+    }
+
+    .contact-container {
+        padding: 100px 0;
+    }
+
+    hr {
+        width: 70%;
+    }
+
+    .contact-info {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .contact-info a {
+        margin: 10px 10px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+
+    }
+
+    /* -------------------------
+            media-queries
+    --------------------------- */
+
+
+    @media only screen and (max-width:768px) {
+        .row {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            position: relative;
+            height: auto;
+        }
+
+        .col-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .col-1 h1 {
+            font-size: 40px;
+            line-height: 40px;
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+        }
+
+        .col-1 p {
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: 400;
+            text-align: center;
+
+        }
+
+        /* csssssssss */
+        .shedule_section {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+
+        }
+
+        .match_fixture {
+
+            flex-direction: row;
+        }
+
+        .date_container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+
+        .match_fixture {
+            width: 100%;
+            height: 312px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #161616;
+            border-radius: 16px;
+            margin-bottom: 5px;
+        }
+
+        .match_fixture button {
+
+            margin: 17px 5px;
+            padding: 16px 5px;
+            font-size: 12px;
+            font-weight: 500;
+            border-radius: 20px;
+        }
+
+        /* cssssssssssss */
+        btn button {
+            margin: auto;
+        }
+
+        .col-1 button {
+            background-color: chocolate;
+            width: 100%;
+            ;
+
+        }
+
+        .col-1 button a {
+            padding: 13px 20px;
+            font-size: 20px;
+            text-decoration: none;
+            display: inline-block;
+
+        }
+
+        footer {
+
+            background-color: #9e3232;
+            padding: 0;
+
+
+        }
+
+
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .contact-info a {
+            margin: 10px 0;
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 300;
+
+        }
+    }
+
+    @media only screen and (max-width: 1024px) and (min-width: 769px) {
+        body {
+            margin: 0 10px;
+        }
+
+        .row-container {
+            width: 100%;
+
+
+        }
+
+        .col-1 h1 {
+            font-size: 45px;
+            line-height: 40px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .col-1 p {
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 200;
+
+        }
+
+        .col-1 button {
+            background-color: chocolate;
+        }
+
+        .col-1 button a {
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* ============================= */
+        .shedule_section {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+
+        }
+
+        .match_fixture {
+
+            flex-direction: row;
+            width: 100%;
+            background-color: navajowhite;
+            height: 200px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+
+        }
+
+        .date_container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        .match_fixture button {
+
+            margin: 62px 20px;
+            padding: 20px 53px font-size: 25px;
+            font-weight: 500;
+            border-radius: px;
+        }
+
+    }
+
+    @media only screen and (max-width:1500px) and (min-width: 769px) {
+        .date_container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+
+        }
+
+    }
