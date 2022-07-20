@@ -266,7 +266,7 @@ hr {
 
     }
 
-    /* csssssssss */
+    /* ================ transfer=============== */
     .upcoming_event {
         display: flex;
         flex-direction: column;
@@ -338,7 +338,7 @@ hr {
             display: block;
            }
 
-    /* cssssssssssss */
+    /* =================================================*/
     
     .col-1 button {
         background-color: chocolate;
@@ -466,5 +466,29 @@ hr {
         grid-template-columns: repeat(2, 1fr);
         
     }
+    .col-1 h1 {
+        font-size: 60px;
+        line-height: 70px;
+        font-weight: 700;
+       
+    }
+    
+    .col-1 p {
+        font-size: 14px;
+        line-height: 22px;
+      
+    
+    }
+    
+    .col-1 button {
+        background-color: chocolate;
+        margin: 15px 0;
+        
 
+
+}
+@media only screen and (max-width:1400px) and (min-width: 1025px){
+    .col-2 img {
+        width: 100%;
+    }
 }
